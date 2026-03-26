@@ -22,6 +22,7 @@
             android:layout_marginTop="55dp"
             android:background="#F8F2F2"
             android:backgroundTint="#74EFE9E9"
+            android:fontFamily="serif"
             android:text="Welcome To Social Suggestions!"
             android:textColor="#1355BC"
             android:textSize="25sp"
@@ -31,14 +32,15 @@
 
         <Button
             android:id="@+id/btnMainClear"
-            android:layout_width="260dp"
-            android:layout_height="61dp"
-            android:layout_marginBottom="48dp"
+            android:layout_width="262dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="50dp"
             android:backgroundTint="#FB2010"
             android:text="Clear Text"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
@@ -59,6 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="98dp"
+            android:fontFamily="sans-serif"
             android:text="Your suggestion will appear here"
             android:textColor="#212121"
             android:textSize="21sp"
@@ -68,16 +71,16 @@
 
         <Button
             android:id="@+id/btnMainSuggestion"
-            android:layout_width="269dp"
-            android:layout_height="62dp"
-            android:layout_marginTop="160dp"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
             android:backgroundTint="#0CE915"
             android:text="Show Suggestion"
             android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnMainClear"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvMainResult" />
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

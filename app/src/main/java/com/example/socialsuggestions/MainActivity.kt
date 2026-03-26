@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             // checks if input is empty
             if (sTimeOfday == "") {
                 // displays message if input is wrong
-                Toast.makeText(this, "Please Enter A Time Of Day!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Input Cannot Be Blank Enter A Time Of Day!", Toast.LENGTH_LONG).show()
 
 
             } else if (sTimeOfday.any { it.isDigit() }) {
