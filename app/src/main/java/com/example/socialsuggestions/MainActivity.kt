@@ -51,40 +51,43 @@ class MainActivity : AppCompatActivity() {
                 // checks if input = morning
              else if (sTimeOfday == "morning") {
                 //displays suggestion
-                tvresult.text = "Say good morning to someone"
+                tvresult.text = "Send a good morning text to a family member "
 
                 // checks if input = mid-morning
             } else if (sTimeOfday == "mid-morning") {
                 // displays suggestion
-                tvresult.text = "Say thank you to a colleague"
+                tvresult.text = "Reach out to colleague with a quick thank you "
 
                 //checcks if input = afternoon
             } else if (sTimeOfday == "afternoon") {
                 // displays suggestion
-                tvresult.text = "Send a funny message to a friend"
+                tvresult.text = "Send a funny meme or intresting link with a freind"
 
                 // checks input = Snack time
-            } else if (sTimeOfday == "snack time") {
+            } else if (sTimeOfday == "afternoon snack time") {
                 //displays suggestion
-                tvresult.text = "Tell someone you are thinking of them"
+                tvresult.text = "Send a quick thinking of you message"
 
                 // checks if input = dinner
             } else if (sTimeOfday == "dinner") {
                 // displays suggestion
-                tvresult.text = "Call someone for a quick chat"
+                tvresult.text = "Call a freind or relative for a quick chat"
 
                 // checks input = night
             } else if (sTimeOfday == "night") {
                 // displays suggestion
-                tvresult.text = "Comment on a friend's post"
+                tvresult.text = "Leave a thoughtful comment on a friend's post"
+
+
+                // checks input = night
+            } else if (sTimeOfday == "after dinner") {
+                // displays suggestion
+                tvresult.text = "Leave a thoughtful comment on a friend's post"
+
 
                 // if input does not equal the suggestions then
             } else {
-                Toast.makeText(
-                    this,
-                    "Please check you are entering a valid input",
-                    Toast.LENGTH_SHORT
-                ).show()
+                Toast.makeText(this, "Please check you are entering a valid input", Toast.LENGTH_SHORT).show()
             }
 
         }
